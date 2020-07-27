@@ -1,0 +1,5 @@
+#stroka=input('Элементы через пробел ').split()
+stroka=input('Элементы через пробел с двоеточием ').split()
+print(stroka)
+z = (stroka[:stroka.index(':')+1])
+print(z)

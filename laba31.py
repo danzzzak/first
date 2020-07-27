@@ -1,0 +1,18 @@
+import math
+print('Введите координаты точек')
+x1=float(input('x1='))
+x2=float(input('x2='))
+x3=float(input('x3='))
+x4=float(input('x4='))
+y1=float(input('y1='))
+y2=float(input('y2='))
+y3=float(input('y3='))
+y4=float(input('y4='))
+dist12 = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+dist13 = math.sqrt((x3 - x1)**2 + (y3 - y1)**2)
+dist14 = math.sqrt((x4 - x1)**2 + (y4 - y1)**2)
+dist23 = math.sqrt((x3 - x2)**2 + (y3 - y2)**2)
+dist24 = math.sqrt((x4 - x2)**2 + (y4 - y2)**2)
+dist34 = math.sqrt((x4 - x3)**2 + (y4 - y3)**2)
+print("От 1 до 2= ""%.2f"%dist12,"От 1 до 3= ""%.2f"%dist13,"От 1 до 4= ""%.2f"%dist14,
+      "От 2 до 3= ""%.2f"%dist23,"От 2 до 4= ""%.2f"%dist24,"От 3 до 4= ""%.2f"%dist34,)
